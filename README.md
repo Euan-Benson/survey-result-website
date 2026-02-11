@@ -12,4 +12,7 @@
 `code section`
 
 ---
+-[x] Write the readme 
+- [] Add dark mode 
+- [] Add collaspable sections
 
