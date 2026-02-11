@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,27 +20,29 @@
 
 body {
   font-family: "Atkinson Hyperlegible", "Nunito Sans", sans-serif;
-  background-color: #F3E6D7;
+  background-color: #f3e6d7;
   text-align: center;
-  height: 100vh;
 }
-header{
-  background-color: #F3E6D7;
+header {
+  background-color: #f3e6d7;
 }
 main {
-  background-color: #F3E6D7 ;
+  background-color: #f3e6d7;
 }
 section {
-  background-color: #B68B9F;
+  background-color: #b68b9f;
   border-radius: 3%;
   margin: 1rem;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1rem;
 }
-img{
-    width: 60%;
-    justify-content: center;
+img {
+  width: 60%;
+  justify-content: center;
 }
-footer{
- background-color: #75B9BE; 
+footer {
+  background-color: #75b9be;
 }
 
 /*----------mobile layout-----------
@@ -65,7 +67,7 @@ a:hover {
 
 /* off-screen-menu */
 .off-screen-menu {
-  background-color: #75B9BE;
+  background-color: #75b9be;
   height: 100vh;
   width: 100%;
   max-width: 450px;
@@ -88,7 +90,7 @@ a:hover {
 nav {
   padding: 1rem;
   display: flex;
-  background-color: #75B9BE;
+  background-color: #75b9be;
 }
 
 /* ham menu */
