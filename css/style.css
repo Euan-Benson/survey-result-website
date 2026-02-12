@@ -24,11 +24,7 @@ body {
   text-align: center;
 }
 header {
-  background-color: #f3e6d7;
   padding: 2rem;
-}
-main {
-  background-color: #f3e6d7;
 }
 section {
   background-color: #b68b9f;
@@ -57,7 +53,6 @@ a:hover {
   background-color: white;
 }
 
-/* off-screen-menu */
 .off-screen-menu {
   background-color: #75b9be;
   height: 100vh;
@@ -78,14 +73,12 @@ a:hover {
   left: 0;
 }
 
-/* nav */
 nav {
   padding: 1rem;
   display: flex;
   background-color: #75b9be;
 }
 
-/* ham menu */
 .ham-menu {
   height: 50px;
   width: 40px;
@@ -123,4 +116,10 @@ nav {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*============Dark Mode===============*/
+.darkMode{
+  color: white;
+  background-color: black;
 }

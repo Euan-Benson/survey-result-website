@@ -1,5 +1,5 @@
 const hidden = document.getElementById("hidden");
-const darkMode = document.querySelector(".darkMode");
+const darkMode = document.getElementById("darkBtn");
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
@@ -18,7 +18,8 @@ function hamburgerMenu() {
 }
 
 function toggleDark() {
-  darkMode.classList.toggle("darkMode");
+  var bodyDark = document.body;
+  bodyDark.classList.toggle("darkMode");
 }
 
 hamMenu.addEventListener("click", hamburgerMenu);

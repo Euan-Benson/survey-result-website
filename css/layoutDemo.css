@@ -18,10 +18,6 @@ section {
 }
 
 /*===========JAVASCRIPT==========*/
-.darkMode {
-  background-color: black;
-  color: white;
-}
 #hidden {
   display: block;
 }
