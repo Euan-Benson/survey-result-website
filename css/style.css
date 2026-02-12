@@ -17,7 +17,6 @@
   9E7744 - white
   */
 }
-
 body {
   font-family: "Atkinson Hyperlegible", "Nunito Sans", sans-serif;
   background-color: #f3e6d7;
@@ -42,7 +41,7 @@ p{
   padding: 2rem;
 }
 details:hover{
-cursor: pointer;
+  cursor: pointer;
 }
 img {
   width: 60%;
