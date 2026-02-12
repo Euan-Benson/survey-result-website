@@ -26,11 +26,27 @@ body {
 header {
   padding: 2rem;
 }
+main{
+  height: 100vh;
+}
+button{
+  border-radius: 20%;
+  padding: 0.5rem;
+}
+button:hover{
+  cursor: pointer;
+}
 section {
   background-color: #b68b9f;
   border-radius: 3%;
   margin: 1rem;
   max-width: 700px;
+}
+p{
+  text-align: left;
+}
+details:hover{
+cursor: pointer;
 }
 img {
   width: 60%;
