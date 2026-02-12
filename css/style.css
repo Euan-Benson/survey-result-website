@@ -30,13 +30,6 @@ main{
   min-height: 100vh;
   height: auto;
 }
-button{
-  border-radius: 20%;
-  padding: 0.5rem;
-}
-button:hover{
-  cursor: pointer;
-}
 section {
   background-color: #b68b9f;
   color: black;
@@ -53,7 +46,13 @@ cursor: pointer;
 }
 img {
   width: 60%;
-  justify-content: center;
+}
+button{
+  border-radius: 20%;
+  padding: 0.5rem;
+}
+button:hover{
+  cursor: pointer;
 }
 footer {
   background-color: #75b9be;

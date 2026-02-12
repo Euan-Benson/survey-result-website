@@ -6,7 +6,7 @@ section {
   gap: 0.5rem;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   margin: auto;
   margin-bottom: 1rem;
 }
