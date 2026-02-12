@@ -10,14 +10,14 @@ section {
   margin: auto;
   margin-bottom: 1rem;
 }
+/*dropdown doesnt work (priority)*/
+.dropdown:hover{
+  cursor: pointer;
+  color: rebeccapurple;
+}
 @media screen and (max-width: 700px) {
   main,
   section {
     flex-direction: column;
   }
-}
-
-/*===========JAVASCRIPT==========*/
-#hidden {
-  display: block;
 }
