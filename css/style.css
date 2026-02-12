@@ -140,3 +140,8 @@ nav {
   color: white;
   background-color: #2F6979;
 }
+/*============Expand Image===============*/
+.expand-image{
+  transform: scale(1.5);
+  transition: 0.3s;
+}
