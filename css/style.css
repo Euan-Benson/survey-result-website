@@ -27,7 +27,8 @@ header {
   padding: 2rem;
 }
 main{
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 button{
   border-radius: 20%;
@@ -38,12 +39,14 @@ button:hover{
 }
 section {
   background-color: #b68b9f;
+  color: black;
   border-radius: 3%;
   margin: 1rem;
   max-width: 700px;
 }
 p{
   text-align: left;
+  padding: 2rem;
 }
 details:hover{
 cursor: pointer;
@@ -137,5 +140,5 @@ nav {
 /*============Dark Mode===============*/
 .darkMode{
   color: white;
-  background-color: black;
+  background-color: #2F6979;
 }

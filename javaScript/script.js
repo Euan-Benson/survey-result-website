@@ -23,11 +23,12 @@ function toggleDark() {
   
   if(darkMode.textContent === "Dark Mode"){
     darkMode.textContent = "Light Mode";
+    
   }else{
     darkMode.textContent = "Dark Mode";
   }
 }
 
 hamMenu.addEventListener("click", hamburgerMenu);
-hidden.addEventListener("click", hideSection);
+//hidden.addEventListener("click", hideSection);
 darkMode.addEventListener("click", toggleDark);
