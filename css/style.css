@@ -6,7 +6,7 @@
   list-style: none;
   text-decoration: none;
   /*
-  Light Mode
+  Light Mode 
   B68B9F - black
   75B9BE - black
   F3E6D7 - black
@@ -25,6 +25,7 @@ body {
 }
 header {
   background-color: #f3e6d7;
+  padding: 2rem;
 }
 main {
   background-color: #f3e6d7;
@@ -41,13 +42,6 @@ img {
 }
 footer {
   background-color: #75b9be;
-}
-
-/*----------mobile layout-----------
-@media screen and (max-width: 600px) {
-    main, aside, section{
-        grid-column: 1/13;
-    }
 }
 
 /*============Hamburger Menu===============*/

@@ -1,5 +1,5 @@
 const hidden = document.getElementById("hidden");
-const darkMode = document.getElementById("darkMode");
+const darkMode = document.querySelector(".darkMode");
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
@@ -12,15 +12,15 @@ function hideSection() {
   }
 }
 
-function toggleDark() {
-  darkMode.classList.toggle("darkMode");
-}
 function hamburgerMenu() {
   hamMenu.classList.toggle("active");
   offScreenMenu.classList.toggle("active");
 }
 
-hamMenu.addEventListener("click", hamburgerMenu);
+function toggleDark() {
+  darkMode.classList.toggle("darkMode");
+}
 
+hamMenu.addEventListener("click", hamburgerMenu);
 hidden.addEventListener("click", hideSection);
 darkMode.addEventListener("click", toggleDark);
