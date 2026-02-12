@@ -20,6 +20,12 @@ function hamburgerMenu() {
 function toggleDark() {
   var bodyDark = document.body;
   bodyDark.classList.toggle("darkMode");
+  
+  if(darkMode.textContent === "Dark Mode"){
+    darkMode.textContent = "Light Mode";
+  }else{
+    darkMode.textContent = "Dark Mode";
+  }
 }
 
 hamMenu.addEventListener("click", hamburgerMenu);
