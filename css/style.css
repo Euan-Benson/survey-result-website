@@ -40,9 +40,6 @@ p{
   text-align: left;
   padding: 2rem;
 }
-details:hover{
-  cursor: pointer;
-}
 img {
   width: 60%;
 }
@@ -141,7 +138,7 @@ nav {
   background-color: #2F6979;
 }
 /*============Expand Image===============*/
-#ageDemo{
+#ageDemo, #hoursDemo{
     border-radius: 3%;
     cursor: zoom-in;
     transition: 0.3s ease;
@@ -149,7 +146,8 @@ nav {
     max-width: 300px;
 }
 
-#ageDemo:hover{
+#ageDemo:hover,
+#hoursDemo:hover{
     opacity: 0.7;
 }
 

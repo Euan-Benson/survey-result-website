@@ -4,9 +4,14 @@ const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
 const modal = document.getElementById("ageModal");
-const img = document.getElementById("ageDemo");
+const ageImg = document.getElementById("ageImg");
 const modalImg = document.getElementById("img01");
 const captionText = document.getElementById("caption");
+
+const hoursModal = document.getElementById("hoursModal");
+const hoursImg = document.getElementById("hoursImg");
+const modalImg2 = document.getElementById("img02");
+const captionHours = document.getElementById("caption");
 
 const span = document.getElementsByClassName("close")[0];
 
@@ -39,5 +44,7 @@ function closeImage(){
 
 hamMenu.addEventListener("click", hamburgerMenu);
 darkMode.addEventListener("click", toggleDark);
-img.addEventListener("click", modalImage);
+ageImg.addEventListener("click", modalImage);
+hoursImg.addEventListener("click", modalImage);
+
 span.addEventListener("click", closeImage);
