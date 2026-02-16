@@ -3,14 +3,12 @@ const darkMode = document.getElementById("darkBtn");
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
-const expand = document.querySelector(".expand");
+const modal = document.getElementById("ageModal");
+const img = document.getElementById("ageDemo");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
 
-var modal = document.getElementById("ageDemo");
-var img = document.getElementById("ageDemo");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-
-var span = document.getElementById("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 function hamburgerMenu() {
   hamMenu.classList.toggle("active");
@@ -29,10 +27,6 @@ function toggleDark() {
   }
 }
 
-function expandImage(){
-  expand.classList.toggle("expand-image");
-}
-
 function modalImage(){
   modal.style.display = "block";
   modalImg.src = this.src;
@@ -45,6 +39,5 @@ function closeImage(){
 
 hamMenu.addEventListener("click", hamburgerMenu);
 darkMode.addEventListener("click", toggleDark);
-expand.addEventListener("click", expandImage);
 img.addEventListener("click", modalImage);
 span.addEventListener("click", closeImage);
