@@ -11,7 +11,12 @@ const captionText = document.getElementById("caption");
 const hoursModal = document.getElementById("hoursModal");
 const hoursImg = document.getElementById("hoursImg");
 const modalImg2 = document.getElementById("img02");
-const captionHours = document.getElementById("caption");
+const hoursCaption = document.getElementById("caption");
+
+const settingsModal = document.getElementById("settingsModal");
+const settingsImg = document.getElementById("settingsImg");
+const modalImg3 = document.getElementById("img03");
+const settingsCaption = document.getElementById("caption");
 
 const span = document.getElementsByClassName("close")[0];
 
@@ -46,5 +51,6 @@ hamMenu.addEventListener("click", hamburgerMenu);
 darkMode.addEventListener("click", toggleDark);
 ageImg.addEventListener("click", modalImage);
 hoursImg.addEventListener("click", modalImage);
+settingsImg.addEventListener("click", modalImage);
 
 span.addEventListener("click", closeImage);
