@@ -4,11 +4,11 @@ const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
 const modal = document.getElementById("ageModal");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
 const ageImg = document.getElementById("ageImg");
 const hoursImg = document.getElementById("hoursImg");
 const settingsImg = document.getElementById("settingsImg");
-const modalImg = document.getElementById("img01");
-const captionText = document.getElementById("caption");
 
 const span = document.getElementsByClassName("close")[0];
 
