@@ -5,18 +5,10 @@ const offScreenMenu = document.querySelector(".off-screen-menu");
 
 const modal = document.getElementById("ageModal");
 const ageImg = document.getElementById("ageImg");
+const hoursImg = document.getElementById("hoursImg");
+const settingsImg = document.getElementById("settingsImg");
 const modalImg = document.getElementById("img01");
 const captionText = document.getElementById("caption");
-
-const hoursModal = document.getElementById("hoursModal");
-const hoursImg = document.getElementById("hoursImg");
-const modalImg2 = document.getElementById("img02");
-const hoursCaption = document.getElementById("caption");
-
-const settingsModal = document.getElementById("settingsModal");
-const settingsImg = document.getElementById("settingsImg");
-const modalImg3 = document.getElementById("img03");
-const settingsCaption = document.getElementById("caption");
 
 const span = document.getElementsByClassName("close")[0];
 
