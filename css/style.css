@@ -138,7 +138,10 @@ nav {
   background-color: #2F6979;
 }
 /*============Expand Image===============*/
-#ageDemo, #hoursDemo{
+#ageImg, 
+#hoursImg, 
+#settingsImg, 
+#currVis{
     border-radius: 3%;
     cursor: zoom-in;
     transition: 0.3s ease;
@@ -147,7 +150,9 @@ nav {
 }
 
 #ageDemo:hover,
-#hoursDemo:hover{
+#hoursDemo:hover, 
+#currVis:hover
+{
     opacity: 0.7;
 }
 
