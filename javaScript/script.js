@@ -1,3 +1,7 @@
+const localStorageTheme = localStorage.getItem("theme");
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+
 const darkMode = document.getElementById("darkBtn");
 
 const hamMenu = document.querySelector(".ham-menu");
@@ -16,6 +20,18 @@ const span = document.getElementsByClassName("close")[0];
 function hamburgerMenu() {
   hamMenu.classList.toggle("active");
   offScreenMenu.classList.toggle("active");
+}
+
+function calcSettingAsThemeString({localStorageTheme, systemSettingDark}){
+  if(localStorageTheme !== null){
+    return localStorageTheme;
+  }
+
+  if(systemSettingDark.matches){
+    return "dark";
+  }
+
+  return "light";
 }
 
 function toggleDark() {
@@ -39,6 +55,8 @@ function modalImage(){
 function closeImage(){
   modal.style.display = "none";
 }
+
+let currentThemeSetting = calcSettingAsThemeString({localStorageTheme, systemSettingDark});
 
 hamMenu.addEventListener("click", hamburgerMenu);
 darkMode.addEventListener("click", toggleDark);
