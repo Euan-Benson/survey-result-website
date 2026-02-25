@@ -1,8 +1,8 @@
+localStorage.getItem("theme");
+localStorage.setItem("theme", newTheme);
 const localStorageTheme = localStorage.getItem("theme");
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-
-const darkMode = document.getElementById("darkBtn");
+const button = document.querySelector("[data-theme-toggle]");
 
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
@@ -22,12 +22,12 @@ function hamburgerMenu() {
   offScreenMenu.classList.toggle("active");
 }
 
-function calcSettingAsThemeString({localStorageTheme, systemSettingDark}){
-  if(localStorageTheme !== null){
+function calcSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+  if (localStorageTheme !== null) {
     return localStorageTheme;
   }
 
-  if(systemSettingDark.matches){
+  if (systemSettingDark.matches) {
     return "dark";
   }
 
@@ -35,31 +35,37 @@ function calcSettingAsThemeString({localStorageTheme, systemSettingDark}){
 }
 
 function toggleDark() {
-  var bodyDark = document.body;
-  bodyDark.classList.toggle("darkMode");
-  
-  if(darkMode.textContent === "Dark Mode"){
-    darkMode.textContent = "Light Mode";
-    
-  }else{
-    darkMode.textContent = "Dark Mode";
-  }
+  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+  const newCta =
+    newTheme === "dark" ? "Change the light theme" : "Change to dark theme";
+  button.innerText = newCta;
+
+  //button.setAttribute("aria-label", newCta);
+
+  document.querySelector("html").setAttribute("data-theme", newTheme);
+
+  localStorage.setItem("theme", newTheme);
+
+  currentThemeSetting = newTheme;
 }
 
-function modalImage(){
+let currentThemeSetting = calcSettingAsThemeString({
+  localStorageTheme,
+  systemSettingDark,
+});
+
+function modalImage() {
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
-function closeImage(){
+function closeImage() {
   modal.style.display = "none";
 }
 
-let currentThemeSetting = calcSettingAsThemeString({localStorageTheme, systemSettingDark});
-
 hamMenu.addEventListener("click", hamburgerMenu);
-darkMode.addEventListener("click", toggleDark);
+button.addEventListener("click", toggleDark);
 
 span.addEventListener("click", closeImage);
 
