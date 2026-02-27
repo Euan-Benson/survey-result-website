@@ -7,19 +7,15 @@
   text-decoration: none;
   /*
   Light Mode 
-  B68B9F - black
-  75B9BE - black
-  F3E6D7 - black
+  #B68B9F - black
+  #75B9BE - black
+  #F3E6D7 - black
 
   Dark Mode
-  663F52 - white
-  2F6979 - white
-  9E7744 - white
+  #663F52 - white
+  #2F6979 - white
+  #9E7744 - white
   */
-}
-:root {
-  --grid-unit: 1rem;
-  --border-radius-base: 0.5rem;
 }
 [data-theme="light"] {
   --color-bg: #ffffff;
