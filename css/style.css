@@ -22,7 +22,7 @@
   --color-fg: #000000;
 }
 [data-theme="dark"] {
-  --color-bg: #000000;
+  --color-bg: #2F6979;
   --color-fg: #ffffff;
 }
 body {
