@@ -20,12 +20,12 @@
 [data-theme="light"] {
   --color-bg: #ffffff;
   --color-fg: #000000;
-  --color-sc: #B68B9F;
+  --color-sc: #b68b9f;
 }
 [data-theme="dark"] {
-  --color-bg: #2F6979;
+  --color-bg: #2f6979;
   --color-fg: #ffffff;
-  --color-sc: #663F52;
+  --color-sc: #663f52;
 }
 body {
   font-family: "Atkinson Hyperlegible", "Nunito Sans", sans-serif;
@@ -68,15 +68,15 @@ footer {
 /*============Hamburger Menu===============*/
 /*highest priority over index page colours, move above stylings?*/
 a {
-  color: black;
+  color: var(--color-fg);
 }
 a:visited {
-  color: black;
+  color: var(--color-fg);
 }
 /*doesnt work with sections on homepage*/
 a:hover {
-  color: black;
-  background-color: white;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
 }
 
 .off-screen-menu {
@@ -142,6 +142,22 @@ nav {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*============Dark Mode===============*/
@@ -213,23 +229,6 @@ nav {
   to {
     transdform: scale(1);
   }
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
